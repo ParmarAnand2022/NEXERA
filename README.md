@@ -1,9 +1,9 @@
 # NEXERA
-AutoDS -  Data Scientist AI Agent
+ Institute: A. D. Patel Intitute of Technology
 <br>
- Team : NEXERA
+ Team: NEXERA
  <br>
- Institute : A. D. Patel Intitute of Technology
+Title: AutoDS -  Data Scientist AI Agent
  <br>
  Team Leader: Mepani Dax
  <br>
@@ -13,4 +13,4 @@ AutoDS -  Data Scientist AI Agent
  <br>
  Team Member 3: Jethva Dharmik
  <br>
- Team Mentor: Mayur B. Ajmeri
+ Mentor: Mayur B. Ajmeri 
