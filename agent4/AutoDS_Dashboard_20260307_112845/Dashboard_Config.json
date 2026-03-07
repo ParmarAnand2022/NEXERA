@@ -1,0 +1,126 @@
+{
+  "dashboard_title": "Sales Analytics Dashboard",
+  "dashboard_type": "Sales Analytics",
+  "created_at": "2026-03-07T11:28:49.476437",
+  "dataset_info": {
+    "name": "Uploaded Dataset",
+    "rows": 50000,
+    "columns": 13,
+    "numeric_features": 0,
+    "categorical_features": 3,
+    "date_features": 1
+  },
+  "theme": {
+    "name": "Sales Dashboard",
+    "primary_color": "#27AE60",
+    "secondary_color": "#2980B9",
+    "accent_color": "#F39C12",
+    "background_color": "#F5F5F5"
+  },
+  "kpis": [
+    {
+      "title": "Total Records",
+      "value": 50000,
+      "format": "0",
+      "color": "#27AE60"
+    }
+  ],
+  "charts": [
+    {
+      "id": 1,
+      "type": "bar",
+      "title": "product_category Distribution",
+      "data": {
+        "Beauty": 8465,
+        "Fashion": 8365,
+        "Books": 8327,
+        "Electronics": 8320,
+        "Sports": 8265
+      },
+      "color": "#2980B9",
+      "position": {
+        "row": 1,
+        "col": 1
+      }
+    },
+    {
+      "id": 2,
+      "type": "bar",
+      "title": "customer_region Distribution",
+      "data": {
+        "Asia": 12526,
+        "North America": 12517,
+        "Middle East": 12505,
+        "Europe": 12452
+      },
+      "color": "#2980B9",
+      "position": {
+        "row": 1,
+        "col": 2
+      }
+    },
+    {
+      "id": 3,
+      "type": "bar",
+      "title": "payment_method Distribution",
+      "data": {
+        "Wallet": 10106,
+        "UPI": 10078,
+        "Debit Card": 9981,
+        "Cash on Delivery": 9927,
+        "Credit Card": 9908
+      },
+      "color": "#2980B9",
+      "position": {
+        "row": 1,
+        "col": 3
+      }
+    },
+    {
+      "id": 4,
+      "type": "table",
+      "title": "Top Categories",
+      "data": {
+        "product_category": {
+          "Beauty": 8465,
+          "Fashion": 8365,
+          "Books": 8327
+        },
+        "customer_region": {
+          "Asia": 12526,
+          "North America": 12517,
+          "Middle East": 12505
+        },
+        "payment_method": {
+          "Wallet": 10106,
+          "UPI": 10078,
+          "Debit Card": 9981
+        }
+      },
+      "position": {
+        "row": 3,
+        "col": 1,
+        "colspan": 3
+      }
+    }
+  ],
+  "filters": [
+    {
+      "field": "product_category",
+      "type": "dropdown"
+    },
+    {
+      "field": "customer_region",
+      "type": "dropdown"
+    },
+    {
+      "field": "payment_method",
+      "type": "dropdown"
+    }
+  ],
+  "target_variable": "total_revenue",
+  "predictions": {
+    "days": 30,
+    "available": false
+  }
+}

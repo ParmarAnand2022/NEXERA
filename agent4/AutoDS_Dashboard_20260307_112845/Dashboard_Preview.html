@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AutoDS Dashboard Preview</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #34495E;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498DB;
+        }
+        .stat-label {
+            color: #7F8C8D;
+            font-size: 14px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            color: #34495E;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498DB;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #34495E;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        tr:hover {
+            background-color: #f8f9f9;
+        }
+        .predictions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .prediction-card {
+            background: linear-gradient(135deg, #3498DB, #2980B9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 150px;
+        }
+        .footer {
+            text-align: center;
+            color: #7F8C8D;
+            margin-top: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AutoDS Dashboard Preview</h1>
+            <p>Universal Data Science Dashboard Generator</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card"><div class="stat-value">50000</div><div class="stat-label">Total Rows</div></div>
+            <div class="stat-card"><div class="stat-value">13</div><div class="stat-label">Total Columns</div></div>
+            <div class="stat-card"><div class="stat-value">0</div><div class="stat-label">Numeric Features</div></div>
+            <div class="stat-card"><div class="stat-value">3</div><div class="stat-label">Categorical Features</div></div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Data Preview (First 5 Rows)</div>
+            <table><thead><tr><th>order_id</th><th>order_date</th><th>product_id</th><th>product_category</th><th>price</th><th>discount_percent</th></tr></thead><tbody><tr><td>1970-01-01 00:00:00.000000001</td><td>2022-04-13 00:00:00</td><td>1970-01-01 00:00:00.000002637</td><td>Books</td><td>1970-01-01 00:00:00.000000128</td><td>1970-01-01 00:00:00.000000010</td></tr><tr><td>1970-01-01 00:00:00.000000002</td><td>2023-03-12 00:00:00</td><td>1970-01-01 00:00:00.000002300</td><td>Fashion</td><td>1970-01-01 00:00:00.000000302</td><td>1970-01-01 00:00:00.000000020</td></tr><tr><td>1970-01-01 00:00:00.000000003</td><td>2022-09-28 00:00:00</td><td>1970-01-01 00:00:00.000003670</td><td>Sports</td><td>1970-01-01 00:00:00.000000495</td><td>1970-01-01 00:00:00.000000020</td></tr><tr><td>1970-01-01 00:00:00.000000004</td><td>2022-04-17 00:00:00</td><td>1970-01-01 00:00:00.000002522</td><td>Books</td><td>1970-01-01 00:00:00.000000371</td><td>1970-01-01 00:00:00.000000015</td></tr><tr><td>1970-01-01 00:00:00.000000005</td><td>2022-03-13 00:00:00</td><td>1970-01-01 00:00:00.000001717</td><td>Beauty</td><td>1970-01-01 00:00:00.000000201</td><td>1970-01-01 00:00:00</td></tr></tbody></table></div><div class="section"><div class="section-title">Quick Statistics</div></div><div class="section"><div class="section-title">Predictions Preview</div><div class="predictions"><p>No predictions available</p></div></div>
+        <div class="footer">
+            <p>AutoDS - Universal Data Science Dashboard Agent</p>
+            <p>Generated on 2026-03-07 11:28:49</p>
+            <p>Target Column: total_revenue</p>
+        </div>
+    </div>
+</body>
+</html>

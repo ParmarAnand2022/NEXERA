@@ -1,0 +1,39 @@
+
+// AUTODS DASHBOARD - DAX MEASURES
+// Copy these into PowerBI 'New Measure'
+
+// ========================================
+// BASIC MEASURES
+// ========================================
+
+Total Records = COUNTROWS('Cleaned_Data')
+
+
+// ========================================
+// CATEGORICAL MEASURES
+// ========================================
+
+Distinct product_category = DISTINCTCOUNT('Cleaned_Data'[product_category])
+
+Distinct customer_region = DISTINCTCOUNT('Cleaned_Data'[customer_region])
+
+Distinct payment_method = DISTINCTCOUNT('Cleaned_Data'[payment_method])
+
+// ========================================
+// TARGET MEASURES
+// ========================================
+
+Target Average = AVERAGE('Cleaned_Data'[total_revenue])
+Target Total = SUM('Cleaned_Data'[total_revenue])
+Target Max = MAX('Cleaned_Data'[total_revenue])
+Target Min = MIN('Cleaned_Data'[total_revenue])
+
+// Percentage of Total
+Target Percent of Total = DIVIDE([Target Total], CALCULATE([Target Total], ALL('Cleaned_Data')), 0)
+
+// ========================================
+// TIME INTELLIGENCE MEASURES
+// ========================================
+
+Previous Period = CALCULATE([Target Total], DATEADD('Cleaned_Data'[order_date], -1, MONTH))
+Growth Percent = DIVIDE([Target Total] - [Previous Period], [Previous Period], 0)

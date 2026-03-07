@@ -1,0 +1,82 @@
+
+POWERBI DASHBOARD CREATION INSTRUCTIONS
+========================================
+Dashboard Type: Sales Analytics Dashboard
+Generated: 2026-03-07 11:28:49.480511
+
+STEP 1: IMPORT DATA
+-------------------
+1. Open PowerBI Desktop
+2. Click "Get Data" then "CSV"
+3. Select "Cleaned_Data.csv" and click "Load"
+4. Click "Get Data" then "CSV" again
+5. Select "Predictions.csv" and click "Load"
+
+STEP 2: CREATE MEASURES
+-----------------------
+Copy these DAX formulas into PowerBI:
+
+-- Basic Measures
+Total Records = COUNTROWS('Cleaned_Data')
+
+-- Target Measures (if applicable)
+Target Average = AVERAGE('Cleaned_Data'[total_revenue])
+Target Total = SUM('Cleaned_Data'[total_revenue])
+Target Max = MAX('Cleaned_Data'[total_revenue])
+Target Min = MIN('Cleaned_Data'[total_revenue])
+
+STEP 3: CREATE VISUALIZATIONS
+------------------------------
+Based on your data, create these visualizations:
+
+
+Chart 1: product_category Distribution
+  Type: bar
+  Create a bar chart showing distribution
+
+Chart 2: customer_region Distribution
+  Type: bar
+  Create a bar chart showing distribution
+
+Chart 3: payment_method Distribution
+  Type: bar
+  Create a bar chart showing distribution
+
+Chart 4: Top Categories
+  Type: table
+  Create a table showing top values
+
+
+STEP 4: APPLY THEME
+-------------------
+Primary Color: #27AE60
+Secondary Color: #2980B9
+Accent Color: #F39C12
+Background: #F5F5F5
+
+STEP 5: ARRANGE DASHBOARD
+-------------------------
+Layout your dashboard in this grid pattern:
+
++-----------------------------------------------------+
+|  [KPI 1]    [KPI 2]    [KPI 3]                    |
++-----------------------------------------------------+
+|  +---------+  +---------+  +---------+            |
+|  | Chart 1 |  | Chart 2 |  | Chart 3 |            |
+|  +---------+  +---------+  +---------+            |
++-----------------------------------------------------+
+|  +---------------------+  +---------------------+  |
+|  |     Chart 4         |  |     Chart 5         |  |
+|  +---------------------+  +---------------------+  |
++-----------------------------------------------------+
+|  +-----------------------------------------------+ |
+|  |              Chart 6 (Table)                  | |
+|  +-----------------------------------------------+ |
++-----------------------------------------------------+
+
+STEP 6: SAVE AND PUBLISH
+------------------------
+1. Click File then Save As -> "AutoDS_Dashboard.pbix"
+2. Click "Publish" to share online (optional)
+
+Your dashboard is ready!
