@@ -46,44 +46,7 @@
 | 🔐 **User Authentication** | Login/Register system |
 | 📱 **Responsive Design** | Works on all devices |
 
----
 
-<div align="center">
-  
-### 🏗 System Architecture
-
-<img src="https://via.placeholder.com/800x400/2C3E50/FFFFFF?text=AutoDS+Architecture+Diagram" alt="Architecture Diagram" width="800">
-
-```mermaid
-graph TD
-    UI[User Interface<br/>Streamlit] --> ORCH[Agent Orchestrator]
-    
-    subgraph ORCH [Agent Orchestrator]
-        A1[Agent 1<br/>Data Cleaner] --> A2[Agent 2<br/>Feature Engineer]
-        A2 --> A3[Agent 3<br/>ML Trainer]
-        A3 --> A4[Agent 4<br/>Dashboard Creator]
-    end
-    
-    A4 --> OUTPUT[Final Output]
-    
-    subgraph OUTPUT [Final Output]
-        O1[.pbix File]
-        O2[CSV Files]
-        O3[DAX Measures]
-        O4[HTML Preview]
-    end
-    
-    style UI fill:#667eea,stroke:#333,stroke-width:2px,color:white
-    style ORCH fill:#764ba2,stroke:#333,stroke-width:2px,color:white
-    style OUTPUT fill:#27ae60,stroke:#333,stroke-width:2px,color:white
-    style A1 fill:#3498db,stroke:#333,stroke-width:1px,color:white
-    style A2 fill:#3498db,stroke:#333,stroke-width:1px,color:white
-    style A3 fill:#3498db,stroke:#333,stroke-width:1px,color:white
-    style A4 fill:#3498db,stroke:#333,stroke-width:1px,color:white
-    style O1 fill:#f39c12,stroke:#333,stroke-width:1px,color:white
-    style O2 fill:#f39c12,stroke:#333,stroke-width:1px,color:white
-    style O3 fill:#f39c12,stroke:#333,stroke-width:1px,color:white
-    style O4 fill:#f39c12,stroke:#333,stroke-width:1px,color:white
 ## 💻 Installation
 
 ### Prerequisites
